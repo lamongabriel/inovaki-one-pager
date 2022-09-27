@@ -2,12 +2,13 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/assets/scripts/index.js'
+    index: './src/scripts/index.js'
   },
 
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'public'),
+    assetModuleFilename: 'src/assets/images/[name].[ext]'
   },
 
   module: {
@@ -21,16 +22,8 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(jpg|png)$/,
-        use: {
-          loader: 'url-loader'
-        }
-      },
-      {
-        test: /\.(woff|woff2)$/,
-        use: {
-          loader: 'url-loader'
-        }
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/,
+        type: 'asset/resource'
       }
     ]
   },

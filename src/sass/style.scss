@@ -1,0 +1,16 @@
+// RESET
+@import './base/reset.scss';
+@import './base/fonts.scss';
+
+// COLORS
+@import './colors/colors.scss';
+
+// COMPONENTS
+@import './components/container.scss';
+@import './components/titles.scss';
+@import './components/button.scss';
+
+
+body{
+  background-color: $background-color;
+}

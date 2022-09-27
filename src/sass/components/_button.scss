@@ -1,0 +1,18 @@
+.yellow-button{
+  background: $inovaki-yellow;
+  color: $inovaki-grey;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  transition: 0.5s background;
+  cursor: pointer;
+  outline: none;
+
+  &:hover{
+    background-color: $inovaki-grey;
+    color: $inovaki-yellow;
+  }
+}
