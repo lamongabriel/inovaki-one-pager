@@ -16,7 +16,11 @@
 <body>
   <main>
 
-    <img src="./LOGO-INOVAKI.png" alt="">
+    <div id="logo">
+      <img id="logo" src="./logo-inovaki-white.png" alt="">
+    </div>
+
+    <span class="header-banner-bg"></span>
 
     <section class="introduction container">
       <h1 class="title">
@@ -32,79 +36,30 @@
       </p>
     </section>
 
-    <section class="who-we-are container">
+    <section class="who-we-are container-dark">
       <div class="cards">
         <div class="card">
-          <h2 class="subtitle">Quem somos?</h2>
-          <p class="text">
-            Somos INOVAKI, uma agência focada em evoluir junto aos clientes, buscando sempre a melhor solução para os
+          <h2 class="subtitle">Prazer, nós somos a <strong>Inovaki.</strong></h2>
+          <p class="text text-white">
+            Agência focada em evoluir junto aos clientes, buscando sempre a melhor solução para os
             seus problemas.
           </p>
         </div>
         <div class="card">
           <h2 class="subtitle">O que fazemos?</h2>
-          <p class="text">Atendemos todas as demandas dos clientes com excelência e inovação. Gerando serviços e
+          <p class="text text-white">
+            Atendemos todas as demandas dos clientes com excelência e inovação. Gerando serviços e
             projetos que melhorem cada vez mais a qualidade na gestão e visualização de nossos clientes.</p>
         </div>
         <div class="card">
           <h2 class="subtitle">Nossa visão</h2>
-          <p class="text">Ser uma empresa referência no ramo e reconhecida por parte dos clientes, parceiros,
+          <p class="text text-white">
+            Ser uma empresa referência no ramo e reconhecida por parte dos clientes, parceiros,
             colaboradores e concorrentes como uma empresa inovadora.</p>
         </div>
       </div>
     </section>
-    
-    <section>
-      <h1 class="title">
-        Contatos
-      </h1>
-      <div class="contacts">
-        <p class="subtitle">
-          WhatsApp
-        </p>
-        <a href="tel:24999814022">(24) 99981-4022</a>
-        <a href="tel:24999110148">(24) 99911-0148</a>
-        <p class="subtitle">
-          Volta Redonda - RJ
-        </p>
-        <p class="text">
-          Rua Mariana do Carmo N. Reis, 308, Vila Mury.
-        </p>
-        <p class="subtitle">
-          Email
-        </p>
-        <a href="mailto:contato@inovaki.com.br">contato@inovaki.com.br</a>
-    </div>
-    <div class="social-media flex">
-      <a href="https://www.facebook.com/agenciainovaki">
-        <img
-          src="https://www.inovaki.com.br/img/facebook.png" 
-          alt="logo facebook">
-      </a>
-      <a href="https://www.instagram.com/agenciainovaki/">
-        <img
-          src="https://www.inovaki.com.br/img/instagram.png" 
-          alt="logo instagram">
-      </a>
-    </div>
-    <h1 class="subtitle">ENVIE SUA MENSAGEM</h1>
-    <form>
-      <p class="text-dark">Preencha corretamente o formulário para que sua mensagem seja respondida corretamente.</p>
-      <div class="formulario flex center">
-        <input type="text" name="nome" placeholder="Digite seu nome">
-        <input type="text" name="email" placeholder="Digite seu e-mail">
-        <input type="text" name="tel" placeholder="Celular ou Telefone" maxlength="15">
-        <select name="tipo">
-          <option value="off">Selecione o Assunto...</option>
-          <option value="Duvida">Dúvida</option>
-          <option value="Orçamento">Orçamento</option>
-          <option value="Parceria">Parceria</option>
-          <option value="Oferta de Produto">Oferta de Produto</option>
-        </select>
-        <textarea name="mensagem" placeholder="Digite sua mensagem..." cols="30" rows="10"></textarea>
-      </div>
-    </form>
-    </section>
+
 
     <section class="sucess-cases container">
       <h1 class="title">Nossos cases de sucesso</h1>
@@ -140,6 +95,54 @@
         <div class="swiper-button-next"></div>
 
       </div>
+    </section>
+
+    <section class="send-us-a-message container-white">
+      <h1 class="title">
+        Contatos
+      </h1>
+      <div class="contacts">
+        <p class="subtitle">
+          WhatsApp
+        </p>
+        <a href="tel:24999814022">(24) 99981-4022</a>
+        <a href="tel:24999110148">(24) 99911-0148</a>
+        <p class="subtitle">
+          Volta Redonda - RJ
+        </p>
+        <p class="text">
+          Rua Mariana do Carmo N. Reis, 308, Vila Mury.
+        </p>
+        <p class="subtitle">
+          Email
+        </p>
+        <a href="mailto:contato@inovaki.com.br">contato@inovaki.com.br</a>
+      </div>
+      <div class="social-media flex">
+        <a href="https://www.facebook.com/agenciainovaki">
+          <img src="https://www.inovaki.com.br/img/facebook.png" alt="logo facebook">
+        </a>
+        <a href="https://www.instagram.com/agenciainovaki/">
+          <img src="https://www.inovaki.com.br/img/instagram.png" alt="logo instagram">
+        </a>
+      </div>
+      <h1 class="subtitle">ENVIE SUA MENSAGEM</h1>
+      <form>
+        <p class="text-dark">Preencha corretamente o formulário para que sua mensagem seja respondida corretamente.</p>
+        <div class="formulario flex center">
+          <input type="text" name="nome" placeholder="Digite seu nome">
+          <input type="text" name="email" placeholder="Digite seu e-mail">
+          <input type="text" name="tel" placeholder="Celular ou Telefone" maxlength="15">
+          <select name="tipo">
+            <option value="off">Selecione o Assunto...</option>
+            <option value="Duvida">Dúvida</option>
+            <option value="Orçamento">Orçamento</option>
+            <option value="Parceria">Parceria</option>
+            <option value="Oferta de Produto">Oferta de Produto</option>
+          </select>
+          <textarea name="mensagem" placeholder="Digite sua mensagem..." cols="30" rows="10"></textarea>
+        </div>
+      </form>
     </section>
 
     <section class="partners container">

@@ -1,3 +1,49 @@
+#logo{
+  z-index: 3;
+  position: relative;
+  margin: 0 auto;
+  width: 20rem;
+}
+
+.header-banner-bg{
+  position: absolute;
+  top: calc(-55rem - 50vw);
+  left: calc(35rem - 10vw);
+  border-radius: 10rem;
+  width: 100vw;
+  height: 100rem;
+  background: #ffde17;
+  display: block !important;
+  transform: rotate(66deg);
+  z-index: 2;
+}
+
+.introduction{
+  >h1{
+    margin-top: 6rem;
+  }
+  >.text{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.who-we-are{
+  h2{
+    color: $text-white;
+  }
+  strong{
+    color: $inovaki-yellow;
+  }
+  .cards{
+    padding: 1rem;
+  }
+}
+
+.cases{
+  overflow: hidden;
+}
+
 .contacts {
   a{
     display: block;
@@ -10,14 +56,14 @@
   margin: 2rem 0;
   gap: 1rem;
 
- a{
-  opacity: 0.3;
-  transition: 0.5s;
- }
+  a{
+    opacity: 0.3;
+    transition: 0.5s;
+  }
 
- a:hover{
-  opacity: 1;
- }
+  a:hover{
+    opacity: 1;
+  }
 }
 
 form {
@@ -42,22 +88,6 @@ form {
   }
 }
 
-.introduction{
-  >.text{
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.who-we-are{
-  .cards{
-    padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 0.2rem;
-    border: solid 1px #eee;
-  }
-}
-
 .partners-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,8 +102,4 @@ form {
       transform: scale(1.1);
     }
   }
-}
-
-.cases{
-  overflow: hidden;
 }

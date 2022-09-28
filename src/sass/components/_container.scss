@@ -3,6 +3,16 @@
   padding: 1rem 1.5rem;
 }
 
+.container-dark{
+  @extend .container;
+  background-color: $container-dark
+}
+
+.container-white{
+  @extend .container;
+  background-color: $container-white
+}
+
 .flex{
   display: flex;
 }

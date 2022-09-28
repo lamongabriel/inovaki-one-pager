@@ -1,0 +1,16 @@
+@media(min-width: 768px){
+  .header-banner-bg{
+    top: calc(-50rem - 50vw);
+    left: calc(30rem - 10vw);
+  }
+}
+
+@media(min-width: 992px){
+}
+
+@media(min-width: 1280px){
+  .header-banner-bg{
+    top: calc(-48rem - 50vw);
+    left: calc(22rem - 10vw);
+  }
+}
