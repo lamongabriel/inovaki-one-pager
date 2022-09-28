@@ -1,3 +1,47 @@
+.contacts {
+  a{
+    display: block;
+    text-decoration: none;
+    color: $text-dark;
+  }
+}
+
+.social-media {
+  margin: 2rem 0;
+  gap: 1rem;
+
+ a{
+  opacity: 0.3;
+  transition: 0.5s;
+ }
+
+ a:hover{
+  opacity: 1;
+ }
+}
+
+form {
+  p{
+    margin: 1.5rem 0;
+  }
+}
+
+.formulario {
+  flex-direction: column;
+  gap: 1rem;
+  
+  input, select, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.4rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
 .introduction{
   >.text{
     margin-top: -1rem;
