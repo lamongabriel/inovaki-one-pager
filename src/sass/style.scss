@@ -9,11 +9,12 @@
 @import './components/container.scss';
 @import './components/titles.scss';
 @import './components/button.scss';
+@import './components/footer.scss';
 
 @import './components/mobile.scss';
 @import './components/desktop.scss';
 
-
 body{
   background-color: $background-color;
+  overflow-x: hidden;
 }

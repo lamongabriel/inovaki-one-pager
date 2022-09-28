@@ -1,5 +1,5 @@
 .title{
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: $inovaki-grey;
   font-weight: 700;
   margin: 3rem 0;
@@ -7,9 +7,13 @@
 
 .subtitle{
   color: $inovaki-yellow;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin: 1rem 0;
+}
+
+.text{
+  text-align: justify;
 }
 
 .text-dark{
