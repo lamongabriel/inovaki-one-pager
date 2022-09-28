@@ -1,0 +1,35 @@
+.introduction{
+  >.text{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.who-we-are{
+  .cards{
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 0.2rem;
+    border: solid 1px #eee;
+  }
+}
+
+.partners-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  justify-content: center;
+
+  a{
+    filter: grayscale(100);
+    transition: 0.2s transform;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+.cases{
+  overflow: hidden;
+}
