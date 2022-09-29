@@ -12,9 +12,8 @@
 @import './components/footer.scss';
 
 @import './components/mobile.scss';
-@import './components/desktop.scss';
+@import './components/media.scss';
 
 body{
   background-color: $background-color;
-  overflow-x: hidden;
 }

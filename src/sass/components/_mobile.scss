@@ -1,3 +1,5 @@
+@import '../colors/colors.scss';
+
 #logo{
   z-index: 3;
   position: relative;
@@ -12,7 +14,7 @@
   border-radius: 10rem;
   width: 100vw;
   height: 100rem;
-  background: #ffde17;
+  background: $inovaki-yellow;
   display: block !important;
   transform: rotate(66deg);
   z-index: 2;
@@ -29,6 +31,7 @@
 }
 
 .who-we-are{
+  padding: 0;
   h2{
     color: $text-white;
   }
@@ -36,12 +39,25 @@
     color: $inovaki-yellow;
   }
   .cards{
-    padding: 1rem;
+    padding: 3rem 2rem;
   }
 }
 
 .cases{
-  overflow: hidden;
+  --swiper-theme-color: #000;
+
+  position: relative;
+  .swiper-button-prev, 
+  .swiper-button-next {
+    color: #000;
+    height: 1rem;
+    margin-top: -6.2rem;
+
+    &::after{
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+  }
 }
 
 .contacts {
@@ -76,11 +92,23 @@ form {
   flex-direction: column;
   gap: 1rem;
   
-  input, select, textarea{
+  input, select, textarea, option{
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 0.4rem;
+    background-color: $background-color;
+    color: $inovaki-grey;
+    text-decoration: none;
+
+    &:focus{
+      outline: none;
+      border: solid 2px $inovaki-yellow;
+    }
+
+    &::placeholder{
+      color: #ccc;
+    }
   }
 
   textarea {
@@ -100,6 +128,7 @@ form {
     transition: 0.2s transform;
     &:hover{
       transform: scale(1.1);
+      filter: none;
     }
   }
 }

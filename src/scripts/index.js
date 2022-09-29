@@ -1,15 +1,17 @@
 import '../sass/style.scss'
-import Swiper from 'swiper'
-import 'swiper/css'
-import ScrollReveal from 'scrollreveal'
+import Swiper, { Navigation, Pagination } from 'swiper'
+Swiper.use([Navigation, Pagination])
+import '../../node_modules/swiper/swiper-bundle.css'
 
-window.sr = ScrollReveal()
+import AOS from 'aos'
+import '../../node_modules/aos/dist/aos.css'
 
 const swiper = new Swiper('.cases', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
   spaceBetween: 30,
+  pagination: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -22,16 +24,4 @@ const swiper = new Swiper('.cases', {
   }
 })
 
-window.sr.reveal(
-  `
-  introduction .title, .introduction .text,
-  .who-we-are,
-  .sucess-cases,
-  .send-us-a-message .contacts, .send-us-a-message .social-media,
-  .partners`,
-  {
-    delay: 100,
-    reset: true,
-    origin: 'right'
-  }
-)
+AOS.init()
