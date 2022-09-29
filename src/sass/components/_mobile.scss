@@ -1,29 +1,21 @@
 @import '../colors/colors.scss';
 
+.top{
+  height: 10rem;
+  overflow: hidden;
+  background-color: $inovaki-yellow;
+  border-bottom-right-radius: 100% 200%;
+  border-bottom-left-radius: 200%;
+}
+
 #logo{
   z-index: 3;
   position: relative;
   margin: 0 auto;
-  width: 20rem;
-}
-
-.header-banner-bg{
-  position: absolute;
-  top: calc(-55rem - 50vw);
-  left: calc(35rem - 10vw);
-  border-radius: 10rem;
-  width: 100vw;
-  height: 100rem;
-  background: $inovaki-yellow;
-  display: block !important;
-  transform: rotate(66deg);
-  z-index: 2;
+  width: 18rem;
 }
 
 .introduction{
-  >h1{
-    margin-top: 6rem;
-  }
   >.text{
     margin-top: -1rem;
     margin-bottom: 2rem;
@@ -45,6 +37,7 @@
 
 .cases{
   --swiper-theme-color: #000;
+  overflow: hidden;
 
   position: relative;
   .swiper-button-prev, 
