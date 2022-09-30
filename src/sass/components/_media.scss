@@ -13,10 +13,6 @@
     margin: 3rem auto;
   }
 
-  .container-white, .container-dark{
-    border-radius: 1rem;
-  }
-
   .top{
     border-bottom-right-radius: 200%;
     border-bottom-left-radius: 200%;
@@ -35,5 +31,36 @@
   
   .subtitle{
     font-size: 2rem;
+  }
+
+  .services-area{
+    max-width: 1140px;
+    margin: 0 auto;
+    border-bottom-left-radius: 2rem;
+
+    .services{
+      justify-content: center;
+    }
+  }
+
+  .stacks{ 
+    justify-content: space-evenly;
+    padding: 2rem;
+    a{
+      width: 5rem;
+      img{
+        transition: 0.4s transform;
+        &:hover{
+          transform: scale(1.3);
+          filter: drop-shadow(2px 2px);
+        }
+      }
+    }
+  }
+
+  .partners{
+    .partners-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr
+    }
   }
 }
