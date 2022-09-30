@@ -13,6 +13,7 @@
   position: relative;
   margin: 0 auto;
   width: 18rem;
+  margin-top: 1rem;
 }
 
 .introduction{
@@ -49,6 +50,22 @@
     &::after{
       font-size: 1.5rem;
       font-weight: 900;
+    }
+  }
+}
+
+.vtex{
+  border-top: solid 1px #ccc;
+
+  img{
+    max-width: 50%;
+    margin: 0 auto;
+    filter: grayscale(0.5);
+  }
+
+  h1{
+    &:last-of-type{
+      margin-top: 2rem;
     }
   }
 }
