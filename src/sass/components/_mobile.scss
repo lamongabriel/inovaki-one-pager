@@ -54,34 +54,41 @@
   }
 }
 
-.services{
-  align-content: space-around;
-  align-items: center;
-  gap: 1rem;
-  background-color: $inovaki-yellow;
-
-  height: 9rem;
-  padding: 1.5rem 1rem;
-
-
-  h2{
-    text-align: justify;
-    margin-bottom: 0.5rem;
-    color: $inovaki-grey;
-    font-weight: 700;
+.services-area{
+  h1{
+    padding-left: 1.5rem;
   }
-
-  p{
-    text-align: justify;
-    font-size: 0.9rem;
-    color: $inovaki-dark;
-    opacity: 0.7;
+    overflow: hidden;
+    position: relative;
+  .services{
+    overflow: hidden;
+    align-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    background-color: $inovaki-yellow;
+  
+    height: 9rem;
+  
+    h2{
+      text-align: left;
+      margin-bottom: 0.5rem;
+      color: $inovaki-grey;
+      font-weight: 700;
+    }
+  
+    p{
+      text-align: justify;
+      font-size: 0.9rem;
+      color: $inovaki-dark;
+      opacity: 0.7;
+      line-height: 1rem;
+    }
   }
-
-  img{
-    width: 25%;
+  .swiper-pagination-bullet-active{
+    background-color: $inovaki-dark;
   }
 }
+
 
 .vtex{
   border-top: solid 1px #ccc;
@@ -99,31 +106,64 @@
   }
 }
 
-.contacts {
-  a{
-    display: block;
-    text-decoration: none;
-    color: $text-dark;
+.send-us-a-message {
+
+  h1{
+    position: relative;
+    &::after{
+      content: '';
+      height: 0.8rem;
+      width: 8rem;
+      position: absolute;
+      left: 0;
+      background-color: $inovaki-yellow;
+      bottom: -2rem;
+    }
+  }
+
+  .contacts {
+    .contact{
+      border-bottom: solid 1px #ddd;
+      padding: 1.5rem 0;
+      a{
+        display: block;
+        text-decoration: none;
+        color: $text-dark;
+      }
+
+      .title-icon{
+        gap: 0.5rem;
+        align-items: center;
+    
+        img{
+          width: 2.2rem;
+        }
+    
+      }
+    }
   }
 }
 
 .social-media {
+  width: 100%;
+  justify-content: center;
   margin: 2rem 0;
-  gap: 1rem;
+  gap: 2rem;
 
   a{
-    opacity: 0.3;
-    transition: 0.5s;
+    filter: grayscale(1);
+    transition: 0.5s filter;
+    width: 12%;
   }
 
   a:hover{
-    opacity: 1;
+    filter: none;
   }
 }
 
 form {
   p{
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
 }
 

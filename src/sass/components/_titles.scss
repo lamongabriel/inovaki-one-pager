@@ -18,9 +18,11 @@
 }
 
 .text-dark{
+  @extend .text;
   color: $text-dark;
 }
 
 .text-white{
+  @extend .text;
   color: $text-white;
 }

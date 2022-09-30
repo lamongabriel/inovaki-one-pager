@@ -6,7 +6,7 @@ import '../../node_modules/swiper/swiper-bundle.css'
 import AOS from 'aos'
 import '../../node_modules/aos/dist/aos.css'
 
-const swiper = new Swiper('.cases', {
+const swiperCases = new Swiper('.cases', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
@@ -17,6 +17,20 @@ const swiper = new Swiper('.cases', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: 'true'
+  }
+})
+
+const swiperServices = new Swiper('.services-area', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  pagination: true,
+
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
