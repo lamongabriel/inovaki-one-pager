@@ -1,16 +1,39 @@
 @media(min-width: 620px){
-  .header-banner-bg{
-    top: calc(-50rem - 50vw);
-    left: calc(30rem - 10vw);
+}
+
+@media(min-width: 1140px){
+  .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem 0;
   }
-}
 
-@media(min-width: 992px){
-}
+  .container-white{
+    padding: 2rem;
+    margin: 3rem auto;
+  }
 
-@media(min-width: 1280px){
-  .header-banner-bg{
-    top: calc(-48rem - 50vw);
-    left: calc(22rem - 10vw);
+  .container-white, .container-dark{
+    border-radius: 1rem;
+  }
+
+  .top{
+    border-bottom-right-radius: 200%;
+    border-bottom-left-radius: 200%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  #logo{
+    margin-top: 2rem;
+  }
+
+  .title{
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  .subtitle{
+    font-size: 2rem;
   }
 }
